@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="calculator.js"></script>
+</head>
+<body>
+  <table>
+      <tr>
+          <td>Please enter first number</td>
+          <td ><input id="firstNum" type="text"> </td>
+      </tr>
+      <tr>
+            <td>Please enter calculation symbol</td>
+            <td><select id="symbol">
+                <option  value="+">+</option>
+                <option value="-">-</option>
+                <option  value="*">*</option>
+                <option  value="/">/</option>
+            </select></td>
+        </tr>
+        <tr>
+                <td>Please enter second number</td>
+                <td><input id="secondNum" type="text"> </td>
+            </tr>
+            <tr>
+                <td><button onclick="calculate()" class="btn btn-success">calculate</button></td>
+            </tr>
+  </table>
+
+  <script>
+   function calculate(){
+       let firstNum=parseInt(document.getElementById("firstNum").value);
+       let secondNum=parseInt(document.getElementById("secondNum").value);
+       let symbol=document.getElementById("symbol").value;
+       let result=calculator(firstNum, secondNum, symbol);
+       alert(result);
+   }
+  </script>
+
+
+</body>
+</html>
