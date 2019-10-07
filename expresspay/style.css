@@ -19,6 +19,8 @@ text-align: center;
     margin-top: 0px;
     background:linear-gradient(to bottom,rgb(230, 191, 141), rgb(241, 239, 236));
 }
+
+
 .krug>button{
     border-radius: 50%;
     margin-left: 35px;

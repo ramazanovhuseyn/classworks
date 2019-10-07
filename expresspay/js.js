@@ -6,8 +6,8 @@ function createImage(src,className, width, height) {
     img.style.height = height;
     return img;
 }
-function createh(text,className){
-    let h=document.createElement('h2');
+function createDiv(text,className){
+    let h=document.createElement('div');
     h.innerText=text;
     h.className=className;
     return h;
@@ -34,9 +34,9 @@ function createButton(text, className) {
 
 function loadHtml() {
 
-    let img = createImage('img/expresspay_081214.jpg',['photo'], '15%','120px');
+    let img = createImage('img/express.png',['photo'], '20%','160px');
     document.body.appendChild(img);
-    let h=createh('Xidmeti Secin',['choose']);
+    let h=createDiv('Xidmeti Secin',['xidmet']);
     document.body.appendChild(h);
 
 
@@ -64,13 +64,20 @@ function loadHtml() {
     let anotherdiv=createContainer1();
     document.body.appendChild(anotherdiv);
 
-    let btnb1 = createButton('Bank Xidmetleri', ['bank']);
-    let btnb2 = createButton('Mobil operatorlar', ['bank']);
-    let btnb3 = createButton('Komunal xidmetler', ['bank']);
+    let btnb1 = createButton('Bank Xidmetleri', ['square']);
+    let btnb2 = createButton('Mobil operatorlar', ['square']);
+    let btnb3 = createButton('Komunal xidmetler', ['square']);
+    let btnb4 = createButton('Kabel TV', ['square']);
+    let btnb5 = createButton('Internet', ['square']);
+    let btnb6 = createButton('Eylence', ['square']);
+
 
     anotherdiv.appendChild(btnb1);
     anotherdiv.appendChild(btnb2);
     anotherdiv.appendChild(btnb3);
+    anotherdiv.appendChild(btnb4);
+    anotherdiv.appendChild(btnb5);
+    anotherdiv.appendChild(btnb6);
 
 }
 loadHtml();
