@@ -1,0 +1,76 @@
+.all{
+    width: 70%;
+    margin:auto;
+    border:rgb(224, 188, 24) solid 8px;
+}
+img{
+    height: 160px;
+}
+ .top-side{
+margin:auto;
+text-align: center;
+}
+.top-side>div{
+    margin: auto;
+    width: 450px;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 0px;
+    background:linear-gradient(to bottom,rgb(230, 191, 141), rgb(241, 239, 236));
+}
+.krug>button{
+    border-radius: 50%;
+    margin-left: 35px;
+    width: 10%;
+    height: 95px;
+    background:linear-gradient(to bottom,rgb(233, 217, 196), rgb(226, 138, 7));
+    font-weight: 600;
+}
+.kvadrat>button{
+    margin-left: 10px;
+    margin-top: 15px;
+    border-radius: 7px;
+    background:linear-gradient(to top,rgb(233, 217, 196), rgb(226, 138, 7));
+    width: 32%;
+    height: 75px;
+    font-weight: 750;
+}
+.flags img{
+    margin-left: 5px;
+    margin-top: 2px;
+    width: 50px;
+    height: 50px;
+}
+.flags button{
+    margin-left: 10px;
+    margin-right: 18px;
+    border-radius: 6px;
+    width: 112px;
+    float: right;
+    margin-top: 10px;
+    background:linear-gradient(to bottom,rgb(230, 191, 141), rgb(241, 239, 236));
+    font-weight: bold;
+}
+.flags span{
+    position: relative;
+    left: 40px;
+    bottom: 15px;
+}
+.bakcell{
+color: red;
+}
+.nar{
+    color:white;
+}
+.blue{
+    color: rgb(40, 133, 255);
+}
+.yellow{
+    position: absolute;
+    bottom: 200px;
+    border-top-right-radius: 15px;
+    z-index: -1;
+    width: 195px;
+    height: 35px;
+    background-color: rgb(224, 188, 24);
+}
