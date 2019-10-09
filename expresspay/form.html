@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    form = {
+       name: {
+            label: 'adivizi daxil edin',
+            input: {
+                type: 'text',
+                className: "class",
+                id:'name'
+            }
+        },
+        car: {
+            label: 'masinlardan birini secin',
+            input: {
+                type: 'select',
+                value: ["bmw","kia"],
+            }
+        },
+        comment:{
+            label: 'comment',
+            input: {
+                type: 'textarea',
+                id:'textarea'
+            }
+        },
+    }    
+
+            let btn = document.createElement('button');
+            btn.innerText='submit';
+            document.body.appendChild(btn);
+
+        for(let f in form){
+            if(form[f].input.type=="select"){
+                let slct=document.createElement('select');
+                for (let index = 0; index < form[f].input.value.length; index++) {
+                    let opt= document.createElement('option');    
+                    opt.innerText=form[f].input.value[index];
+                    slct.appendChild(opt);
+                }
+                document.body.appendChild(slct);
+            }
+            else{
+                let lb = document.createElement('label');
+            lb.innerText = form[f].label;
+            lb.setAttribute('for',form[f].input.id);
+            document.body.appendChild(lb);
+            let inps=document.createElement('input');
+            inps.setAttribute('type',form[f].input.type);
+            inps.setAttribute('id',form[f].input.id);
+            document.body.appendChild(inps);
+            }           
+        }
+    </script>
+</body>
+</html>

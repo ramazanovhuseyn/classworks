@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<style>
+.container{
+    width: 400px;
+}
+button{
+    width:370px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+    <h2>Hokumet Odenis Portali</h2><br>
+    <form>
+        <div class="form-group">
+            <label>Kartin nomresi</label>
+            <input id="cardNumber" type="text" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Bitme Tarixi (Ay/il)</label>
+            <input  id="cardDate" type="text" class="form-control">
+        </div>
+        <div class="form-group">
+                <label>CVV2/CVC2</label>
+                <input  id="cardCvv" type="text" class="form-control">
+        </div>
+        <button class="btn btn-success">Pay</button>
+    </form>
+</div>
+<script src="kartlar.js"></script>
+<script src="js.js"></script>
+</body>
+</html>
