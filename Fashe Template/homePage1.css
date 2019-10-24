@@ -1,0 +1,68 @@
+li{
+    display: inline;
+}
+img{
+    object-fit: cover;
+}
+.adv{
+    background-color: #f2f2f2;
+}
+.dresses {
+    bottom: 352px;
+    left: 33.333%;
+    background-color: white;
+    width: 136px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dresses>a{
+    color: black;
+}
+.sec-left{
+    background-color: #f2f2f2;
+}
+.gafas{
+        top: 56%;
+        left: 35%;
+    }
+    .dollar {
+        top: 62%;
+        left: 40%;
+    }
+    .dollar1{
+        top: 62%;
+        left: 50%;
+    }
+    .kv-1{
+        width: 50px;
+        height: 50px;
+        border: 1px solid rgb(161, 161, 161);
+        display: inline-block;
+    }
+    .kvadratlar{
+        top: 80%;
+        left: 29%;
+    }
+    .our-head{
+        display: flex;
+        justify-content: center;
+    }
+    .follow{
+        display: flex;
+        justify-content: center;
+    }
+
+    footer a{
+        font-size: 0.8em;
+    }
+    footer p{
+        font-size: 0.8em;
+    }
+    footer{
+        background-color: #f2f2f2;
+    }
+    #li-block li{
+        display: block;
+    }
